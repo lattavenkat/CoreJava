@@ -1,10 +1,12 @@
-package lab1;
+package com.example.javausecase.corejava.lab1;
 
 import java.util.Scanner;
 
 public class AmstrongNo {
 	public void amstrong(int n) {
-		int a=0,temp,c=0;
+		int a=0;
+        int temp;
+        int c=0;
 		temp=n;
         while (n> 0)
         {

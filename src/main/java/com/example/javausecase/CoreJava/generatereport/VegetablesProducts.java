@@ -1,4 +1,4 @@
-package com.generatereport;
+package com.example.javausecase.corejava.generatereport;
 
 public class VegetablesProducts {
 	int pid , Qty, rate ,Gst, TotalAmt;

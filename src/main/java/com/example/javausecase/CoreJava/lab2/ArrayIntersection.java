@@ -1,4 +1,4 @@
-package lab2;
+package com.example.javausecase.corejava.lab2;
 
 public class ArrayIntersection {
 public void intersection() {

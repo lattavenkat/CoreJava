@@ -1,4 +1,4 @@
-package com.example.javausecase.CoreJava.lab2;
+package com.example.javausecase.corejava.lab2;
 
 public class join {
     public static void main(String[] args) {

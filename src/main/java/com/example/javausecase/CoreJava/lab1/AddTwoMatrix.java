@@ -1,4 +1,4 @@
-package lab1;
+package com.example.javausecase.corejava.lab1;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class AddTwoMatrix {
 	  {
 		int row,col,i,j;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ADDITION OF TWO MATRIX");
+		System.out.println("ADDITION OF TWO MATRIX\n");
 		System.out.println("----------------------");
 		System.out.println("Enter the number of rows: ");
 		row = sc.nextInt();

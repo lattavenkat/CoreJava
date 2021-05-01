@@ -1,4 +1,4 @@
-package com.example.javausecase.CoreJava.lab1;
+package com.example.javausecase.corejava.lab1;
 
 public class pig {
     public static void main(String[] args) {

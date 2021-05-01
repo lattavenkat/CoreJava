@@ -1,4 +1,4 @@
-package lab1;
+package com.example.javausecase.corejava.lab1;
 
 import java.util.Arrays;
 import java.util.Scanner;
