@@ -1,5 +1,4 @@
 package com.example.javausecase.corejava.lab2;
-
 public class ArrayIntersection {
 public void intersection() {
 	System.out.println("ARRAY INTERSECTION");

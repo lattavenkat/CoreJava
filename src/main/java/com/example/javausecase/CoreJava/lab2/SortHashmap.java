@@ -1,5 +1,4 @@
 package com.example.javausecase.corejava.lab2;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

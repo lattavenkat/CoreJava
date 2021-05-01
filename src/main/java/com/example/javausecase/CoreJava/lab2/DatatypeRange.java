@@ -1,5 +1,4 @@
 package com.example.javausecase.corejava.lab2;
-
 public class DatatypeRange {
 	public static void main(String[] args) {
 	      System.out.println("Max Values");
