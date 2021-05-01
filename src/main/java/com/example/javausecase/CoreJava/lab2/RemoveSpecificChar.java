@@ -6,20 +6,21 @@ public class RemoveSpecificChar {
 	public static void main(String[] args)
     {
         String originalstring;
-        Scanner in =new Scanner(System.in);
+        Scanner sc =new Scanner(System.in);
         System.out.println("Enter the string");
-        originalstring = in.nextLine();
+        originalstring = sc.nextLine();
         System.out.println("Original string is   "+ originalstring);
         System.out.println("");
         System.out.println("Please enter unwanted characters as String");
         System.out.println("");
        
-        String removecharacterstring=in.nextLine();
+        String removecharacterstring=sc.nextLine();
         String output=removeSpecificChars(originalstring, removecharacterstring);
         System.out.println("");
         
         System.out.print("Output is >>  " );
         System.out.println(output);
+        sc.close();
     }
     
     public static String removeSpecificChars(String originalstring ,String removecharacterstring)

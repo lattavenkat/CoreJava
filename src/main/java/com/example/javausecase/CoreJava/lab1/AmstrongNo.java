@@ -30,5 +30,6 @@ public class AmstrongNo {
 		int n = sc.nextInt();
 		AmstrongNo ob= new AmstrongNo();  
 		ob.amstrong(n);
+        sc.close();
     }
 }

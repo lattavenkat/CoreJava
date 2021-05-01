@@ -3,9 +3,13 @@ package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
 
 public class BubbleSort {
-	public static void sort(int a[])
+	public static void sort(int[] a)
 	{ 
-	int n=a.length,i,j,p,temp;
+	int n=a.length;
+	int i;
+	int j;
+	
+	int temp;
 	for (i = 0;i < n-1; i++) 
 	{ 	 
 	for (j=0; j<n-i-1; j++)
@@ -19,7 +23,7 @@ public class BubbleSort {
 	}  
 	} 
 	}
-	public static void printarray(int a[]){
+	public static void printarray(int[] a){
 	for(int i=0; i < a.length; i++){
 	 
 	System.out.print(a[i]+" ");
@@ -27,7 +31,9 @@ public class BubbleSort {
 	}
 	public static void main(String[] args) 
 	{
-	int n, res,i;
+	int n;
+	
+	int i;
 	System.out.println("BUBBLE SORT");
 	System.out.println("-----------");
 	Scanner sc = new Scanner(System.in);
@@ -43,6 +49,7 @@ public class BubbleSort {
 	printarray(a);
 	sort(a);
 	System.out.println( "\nelements after sorting");
-	printarray(a);	 
+	printarray(a);
+	sc.close(); 
 	}
 }

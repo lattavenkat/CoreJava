@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class AddTwoMatrix {
 	public static void main(String args[])
 	  {
-		int row,col,i,j;
+		int row;
+		int col;
+		int i;
+		int j;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ADDITION OF TWO MATRIX\n");
 		System.out.println("----------------------");
@@ -44,6 +47,6 @@ public class AddTwoMatrix {
 			}
 			System.out.println();
 		}
-		
+		sc.close();
 	  }
 }

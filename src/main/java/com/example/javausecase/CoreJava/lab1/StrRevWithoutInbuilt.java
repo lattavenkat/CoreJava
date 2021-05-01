@@ -16,10 +16,12 @@ while(i>0)
 System.out.print(str.charAt(i-1));                 
 i--;                                
 }  
+sc.close();
 	}
 	public static void main(String args[])  
 {  
 		StrRevWithoutInbuilt ob = new StrRevWithoutInbuilt();
 		ob.strrev();
+		
 }
 }

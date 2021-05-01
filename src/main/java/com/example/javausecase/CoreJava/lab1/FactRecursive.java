@@ -19,5 +19,6 @@ public class FactRecursive {
 	      System.out.println("Enter the number");
 	      int num = sc.nextInt();
 	      System.out.println("Factorial of" +num+ "is "+ factorial(num));
-}
+		  sc.close();
+		}
 	   }

@@ -87,7 +87,7 @@ public class Emart {
 			FinalPayment pay = new FinalPayment();
 			pay.attapay();
 		}
-
+sc.close();
 	}
 
 }

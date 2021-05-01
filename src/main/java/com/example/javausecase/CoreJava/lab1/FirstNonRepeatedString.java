@@ -27,6 +27,7 @@ public class FirstNonRepeatedString {
 	      System.out.println("Enter the String :");
 	      String str = sc.nextLine();
 	      FirstNonRepeatedString ob = new FirstNonRepeatedString();
-	      ob.nonrepeatstr(str);		
+	      ob.nonrepeatstr(str);	
+		  sc.close();	
 }	
 }

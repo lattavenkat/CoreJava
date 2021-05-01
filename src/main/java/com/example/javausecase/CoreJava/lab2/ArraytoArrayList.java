@@ -17,6 +17,7 @@ public void arrlist() {
     System.out.println("Arraylist");
     System.out.println("=========================");
     System.out.println(al);
+	sc.close();
 }
 	public static void main (String[] args)
     {

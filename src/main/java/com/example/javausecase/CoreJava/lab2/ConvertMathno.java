@@ -25,5 +25,6 @@ public class ConvertMathno {
         int n=sc.nextInt();
 		ConvertMathno ob = new ConvertMathno();
 		ob.mathno(n);
+        sc.close();
     }	
 }

@@ -21,5 +21,6 @@ public class UniqueChar {
 		str = sc.nextLine();
 			System.out.println("Original String : "+str);
 			System.out.println("String has all unique characters: "+is_Unique_str(str));
-		}
+		sc.close();
+	}
 }

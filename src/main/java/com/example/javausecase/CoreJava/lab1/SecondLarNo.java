@@ -26,6 +26,6 @@ public class SecondLarNo {
 			}
 			SecondLarNo sl=new SecondLarNo();
 		    sl.seclarge(arr,n);
-			
+			sc.close();
 		}
 }

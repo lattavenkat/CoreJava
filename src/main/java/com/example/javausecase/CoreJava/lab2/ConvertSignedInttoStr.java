@@ -10,5 +10,6 @@ public class ConvertSignedInttoStr {
 			num = sc.nextInt();
 	        String msg = String.format("There are %s Days Left", num);	        
 	        System.out.println(msg);             
-	    }
+			sc.close();
+		}
 }

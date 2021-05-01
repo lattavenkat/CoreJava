@@ -6,14 +6,11 @@ public class IterateHashset {
 	 public static void main(String args[])
 	    {	       
 	        HashSet<String> set = new HashSet<String>();
-	        set.add("Gokul");
+			set.add( "Gokul");
 	        set.add( "Latha");
-	        set.add( "Srinath");
-	        set.add( "Sumathy");
-	        set.add( "Kishore");
-	        set.add( "Lokesh");
+	        set.add( "Srinath");        
         System.out.println("HashSet: " + set);
-        Iterator value = set.iterator();
+        Iterator<String> value = set.iterator();
         System.out.println("The iterator values are: ");
 	        while (value.hasNext()) {
 	            System.out.println(value.next());

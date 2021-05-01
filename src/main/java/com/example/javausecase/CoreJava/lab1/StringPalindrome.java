@@ -26,6 +26,7 @@ public class StringPalindrome {
 	      String original = sc.nextLine();   	         
 	      StringPalindrome ob = new StringPalindrome();
 	      ob.palindrome(original);
+		  sc.close();
 	   }  
 	}
 

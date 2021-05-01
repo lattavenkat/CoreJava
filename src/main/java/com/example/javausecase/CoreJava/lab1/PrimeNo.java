@@ -22,9 +22,9 @@ public class PrimeNo {
 					
 				}
 			}
-			if(prime==false)
+			if(prime == false)
 			{
-				System.out.println(n+ "is a prime number");
+				System.out.println(n+ " is a prime number");
 			}
 		}
 	}
@@ -36,6 +36,7 @@ public class PrimeNo {
 		int n=sc.nextInt();
 		PrimeNo pm=new PrimeNo();
 		pm.primemeth(n);
+		sc.close();
 	}
 
 }

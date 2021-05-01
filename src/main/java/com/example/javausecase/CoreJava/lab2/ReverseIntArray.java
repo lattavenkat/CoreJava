@@ -23,7 +23,7 @@ public class ReverseIntArray {
 	      System.out.println("\nArray after reverse:");
 	      for (int i = 0; i < numbers.length; i++) {
 	         System.out.print(numbers[i] + " ");
-	      } 
+	      } sc.close();
 	   }
 	
 

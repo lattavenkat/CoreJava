@@ -3,9 +3,12 @@ package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
 
 public class InsertionSort {
-	public static void Sort(int a[])
+	public static void sort(int a[])
 	{ 
-	int n=a.length,i,j,p,temp;
+	int n=a.length;
+	int i;
+	int j;
+	int temp;
 	for (i = 1;i < n; i++) 
 	{ 
 	 
@@ -29,24 +32,28 @@ public class InsertionSort {
 	}
 	public static void main(String[] args) 
 	{
-	int n, res,i;
+	int n;
+	
+	int i;
 	System.out.println("INSERTION SORT");
     System.out.println("---------------");
-	Scanner s = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 	System.out.print("Enter number of elements in the array:");
-	n = s.nextInt();
+	n = sc.nextInt();
 	int a[] = new int[n];
 	System.out.println("Enter "+n+" elements ");
 	for( i=0; i < n; i++)
 	{
-	a[i] = s.nextInt();
+	a[i] = sc.nextInt();
 	}
 	 
 	System.out.println( "elements in array ");
 	printarray(a);
-	Sort(a);
+	sort(a);
 	System.out.println( "\nelements after sorting");
 	printarray(a);
+	
+	sc.close();
 	 
 	}
 

@@ -8,8 +8,7 @@ public class CountVowels {
         Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the string");
 		str = sc.nextLine();
-            str = str.toLowerCase();
-      char[] chars = str.toCharArray();
+            str = str.toLowerCase();   
       int count = 0;
       for (int i = 0; i < str.length(); i++)
         {           
@@ -22,7 +21,8 @@ public class CountVowels {
             }
         }
       System.out.println("Total no of vowels in string are: " + count);
-	}
+      sc.close();
+    }
 	public static void main(String[] args)    
     {	
 		CountVowels ob = new CountVowels();

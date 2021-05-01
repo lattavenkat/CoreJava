@@ -24,6 +24,6 @@ public class SwapWithoutVar {
 		}
 		else {
 			System.out.println("Invalid Input");			
-		}		
+		}sc.close();		
 	}	
 }

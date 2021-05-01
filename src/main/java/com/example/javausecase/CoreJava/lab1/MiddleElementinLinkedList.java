@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MiddleElementinLinkedList {
-	private static String FindMiddle1(List<String> list) {
+	private static String FindMiddle (List<String> list) {
 		int size = list.size();
 		int middle = (size / 2);
 		return list.get(middle).toString();
@@ -14,7 +14,7 @@ public class MiddleElementinLinkedList {
 		for (int i = 0; i < 1000; i++) {
 			list.add(String.valueOf(i));
 		}
-		System.out.println("Middle Element of Linked List is: " + FindMiddle1(list));
+		System.out.println("Middle Element of Linked List is: " + FindMiddle(list));
 	} 
 	
 }

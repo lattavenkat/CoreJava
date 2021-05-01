@@ -31,5 +31,6 @@ public class RemoveDuplicateArr {
 	        for (int i = 0; i <= counter; i++) {
 	            System.out.println(uniqueArr[i]);
 	        }
+			sc.close();
 	    }
 }

@@ -17,6 +17,7 @@ public class SwapWithThirdVar {
 		System.out.println("Value of y is :" + y);
 
 		swap(x, y);
+		sc.close();
 	}
 
 	private static void swap(int x, int y) {

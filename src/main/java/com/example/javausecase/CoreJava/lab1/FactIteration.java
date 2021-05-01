@@ -20,5 +20,6 @@ public class FactIteration {
 		int num = sc.nextInt();		
 		FactIteration ob = new FactIteration();
 		ob.factite(num);
+		sc.close();
     }
 }

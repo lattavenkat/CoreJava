@@ -12,6 +12,7 @@ public class RemoveWhiteSpace {
 		line= sc.nextLine();
 		System.out.println("Your sentence after removing white space:");
 		System.out.println(line.replaceAll(" ",""));
+		sc.close();
 	}
 	
 }

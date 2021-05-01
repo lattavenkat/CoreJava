@@ -19,6 +19,7 @@ public void casecon() {
         }    
     }    
     System.out.println("String after case conversion : " + newStr);    
+    sc.close();
 }
 public static void main(String[] args) {    
 	System.out.println("CONVERSION OF UPPERCASE TO LOWERCASE AND VICE-VERSA");

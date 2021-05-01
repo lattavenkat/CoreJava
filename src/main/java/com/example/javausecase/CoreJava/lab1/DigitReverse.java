@@ -22,5 +22,6 @@ public class DigitReverse {
 	      int num = sc.nextInt();
 	      DigitReverse ob = new DigitReverse();
 	      ob.digrev(num);
+		  sc.close();
 	   }
 }

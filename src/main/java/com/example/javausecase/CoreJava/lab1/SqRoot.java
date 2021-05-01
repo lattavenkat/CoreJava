@@ -17,8 +17,6 @@ public static void main(String args[]) {
 	    	sqrt = ( n/temp + temp) / 2;
 	    }
 	    System.out.println("Square root of "+ n+ " is: " +sqrt);
+		sc.close();
 	} 
-
-	
-
 }

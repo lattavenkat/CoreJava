@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class StrRevWithInbuilt {
 	public void strrev() {
-		String str, rev ="";
+		String str;
+		String rev ="";
 		System.out.println("Enter the String");
 		Scanner sc = new  Scanner(System.in);
 		str= sc.nextLine();

@@ -28,5 +28,6 @@ public class FindDuplicateStr {
 	      String str = sc.nextLine();
 	      FindDuplicateStr ob = new FindDuplicateStr();
 	      ob.duplicatestr(str);
+		  sc.close();
 	   }	
 }

@@ -29,5 +29,6 @@ public class CharacterOccurances {
 		System.out.println("Enter the string");
 		str = sc.nextLine();			
 		countEachChar(str); 
+		sc.close();
 	   }
 }
