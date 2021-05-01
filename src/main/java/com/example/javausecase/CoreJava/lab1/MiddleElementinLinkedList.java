@@ -1,5 +1,4 @@
 package com.example.javausecase.corejava.lab1;
-
 import java.util.LinkedList;
 import java.util.List;
 

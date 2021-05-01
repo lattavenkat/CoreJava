@@ -8,7 +8,6 @@ public class BubbleSort {
 	int n=a.length;
 	int i;
 	int j;
-	
 	int temp;
 	for (i = 0;i < n-1; i++) 
 	{ 	 

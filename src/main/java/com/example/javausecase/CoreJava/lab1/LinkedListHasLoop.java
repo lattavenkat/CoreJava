@@ -1,5 +1,4 @@
 package com.example.javausecase.corejava.lab1;
-
 public class LinkedListHasLoop {
 	static class Node
 	    {

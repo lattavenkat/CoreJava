@@ -29,8 +29,7 @@ public class AddTwoMatrix {
 				mat1[i][j] = sc.nextInt();
 				System.out.println();
 			}
-		}
-		
+		}		
 		System.out.println("Enter the elements of matrix2");		 
 		for ( i= 0 ; i < row ; i++){		 
 			for ( j= 0 ; j < col ;j++){

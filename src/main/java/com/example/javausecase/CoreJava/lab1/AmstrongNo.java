@@ -1,7 +1,6 @@
 package com.example.javausecase.corejava.lab1;
 
 import java.util.Scanner;
-
 public class AmstrongNo {
 	public void amstrong(int n) {
 		int a=0;
