@@ -38,7 +38,7 @@ public class BeveragesProducts {
 		
 		System.out.println("YOUR BILL");
 		System.out.println("[Total Price * Gst Charged/100 ]");
-		System.out.println("--------------------------------");
+		System.out.println("---------------------------------");
 		System.out.println("Product Price =  Rs." + this.totalAmt*this.gst/100 + "\nGst Charged = " + this.gst + "%");
 	}
 	public void pepsiPrice() {

@@ -39,7 +39,7 @@ public class Groceryoperations {
 			if(g.Distributor.equals(distName))
 			{
 				System.out.println("DISTRIBUTOR NAME MATCHED! " +distName);
-				System.out.println("============================================================================================================");
+				System.out.println("=============================================================================================================");
 				System.out.println(g);
 				System.out.println("============================================================================================================");
 				
