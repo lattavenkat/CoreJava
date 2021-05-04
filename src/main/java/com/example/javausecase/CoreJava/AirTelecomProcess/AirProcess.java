@@ -69,7 +69,7 @@ public class AirProcess {
 		System.out.println("=================================================================================================================");
 		System.out.println("customer base country is Tanzania, Postpaid connection with no VAS enabled");
 		f.searchByCountryAndVas1(custList);
-		System.out.println("=================================================================================================================");
+		System.out.println("===================================================================================================================");
 
 		System.out.println("Customer is from “South Africa” & “Rwanda” and has Prepaid connection with atleast one VAS enabled");
 		f.searchByCountryAndVas2(custList);
