@@ -1,48 +1,49 @@
 package com.example.javausecase.corejava.generatereport;
 
 public class FoodgrainsProducts {
-	int pid , Qty, rate ,Gst, TotalAmt;
+	int pid ;
+	int qty;
+	int rate ;
+	int gst;
+	int totalAmt;
 	String brand;
 	
 	public FoodgrainsProducts(int pid, int qty, int rate, int gst, int totalAmt, String brand) {
 		super();
 		this.pid = pid;
-		this.Qty = qty;
+		this.qty = qty;
 		this.rate = rate;
-		this.Gst = gst;
-		this.TotalAmt = totalAmt;
+		this.gst = gst;
+		this.totalAmt = totalAmt;
 		this.brand = brand;
 	}
 	public void showattadetails() {
-		System.out.println("Product Details");
-			System.out.println("-----------------");
-		    System.out.println("ProductDetails:\n------------------------------------------\nProduct Id = " + this.pid  + "\nProduct Price = " + this.rate + "\nProduct Brand = " + this.brand +
-		    		"\nProduct_GST = " + this.Gst + "%" +"\nQty = " +  this.Qty+ "\nTotalPrice = "  +  this.Qty*this.rate + " Rs"  );
-		    this.TotalAmt= this.rate*this.Qty;
+		
+			System.out.println("----------------------------------");
+		    System.out.println("ProductDetails:\n------------------------------------------\nProduct Id = " + this.pid  + "\nProduct Price = Rs." + this.rate    + "\nProduct Brand = " + this.brand +
+			        		"\nGST Amount = " + this.gst + "%" +"\nQuantity= " +  this.qty+ "\nTotalPrice =  Rs."  +  this.qty*this.rate  );
+		    this.totalAmt= this.rate*this.qty;
 	}
 
 	public void showricedetails() {
 		System.out.println("Product Details");
 			System.out.println("-----------------");
-		    System.out.println("ProductDetails:\n------------------------------------------\nProduct Id = " + this.pid  + "\nProduct Price = " + this.rate + "\nProduct Brand = " + this.brand +
-		    		"\nProduct_GST = " + this.Gst + "%" +"\nQty = " +  this.Qty+ "\nTotalPrice = "  +  this.Qty*this.rate + " Rs"  );
-		    this.TotalAmt= this.rate*this.Qty;
+			System.out.println("ProductDetails:\n------------------------------------------\nProduct Id = " + this.pid  + "\nProduct Price = Rs." + this.rate    + "\nProduct Brand = " + this.brand +
+			"\nGST Amount = " + this.gst + "%" +"\nQuantity= " +  this.qty+ "\nTotalPrice =  Rs."  +  this.qty*this.rate  );
+		    this.totalAmt= this.rate*this.qty;
 
 	}
-	public void riceprice() {
+	public void ricePrice() {
 		 System.out.println("Product Details");
 			System.out.println("[Total Price * Gst Charged/100 ]");
 		 System.out.println("-----------------");
-		 System.out.println("Product Price: = " + this.TotalAmt*this.Gst/100
-		 		+ " Rs"  + "\nGst Charged = " + this.Gst + "%");
+		 System.out.println("Product Price =  Rs." + this.totalAmt*this.gst/100 + "\nGst Charged = " + this.gst + "%");
 			 }
-	public void attaprice() {
+	public void attaPrice() {
 		System.out.println("Product Details");
 		System.out.println("[Total Price * Gst Charged/100 ]");
-	 System.out.println("-----------------");
-	 System.out.println("Product Price: = " + this.TotalAmt*this.Gst/100
-	 		+ " Rs"  + "\nGst Charged = " + this.Gst + "%");
-				
+	 System.out.println("------------------");
+	 System.out.println("Product Price =  Rs." + this.totalAmt*this.gst/100 + "\nGst Charged = " + this.gst + "%");			
 	}
 	
 }

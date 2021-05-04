@@ -7,38 +7,33 @@ public class Products {
 	static VegetablesProducts vp;
 	static FoodgrainsProducts fg;
 
-	public void Beveragecocoorder() {
+	public void beveragecocoorder() {
 		bp = new BeveragesProducts(8, 700, 130, 12, 0, "COCOLA");
-
 		bp.showcocoladetails();
 	}
 
-	public void Beveragepepsiorder() {
+	public void beveragepepsiorder() {
 		bp = new BeveragesProducts(1236, 200, 145, 12, 0, "Beer");
-
 		bp.showPepsidetails();
 	}
 
-	public void VegetablesOrganicProducts() {
+	public void vegetablesOrganicProducts() {
 		vp = new VegetablesProducts(4506, 450, 150, 12, 0, "Organic");
-
 		vp.showtomatodetails();
 	}
 
-	public void VegetablesExoticProducts() {
+	public void vegetablesExoticProducts() {
 		vp = new VegetablesProducts(1065, 550, 180, 12, 0, "Exotic");
 		vp.showpotatodetails();
 	}
 
-	public void FoodGrainsRiceProducts() {
+	public void foodGrainRiceProducts() {
 		fg = new FoodgrainsProducts(1302, 900, 250, 12, 0, "BASMATI");
-
 		fg.showattadetails();
 	}
 
-	public void FoodGrainFlourProducts() {
+	public void foodGrainFlourProducts() {
 		fg = new FoodgrainsProducts(1201, 800, 350, 12, 0, "CHAAKI ATTA");
-
 		fg.showricedetails();
 	}
 
@@ -47,16 +42,16 @@ public class Products {
 	}
 
 	public void pepsirate() {
-		bp.pepsiprice();
+		bp.pepsiPrice();
 	}
 
 	public void ricerate() {
-		fg.riceprice();
+		fg.ricePrice();
 		
 	}
 
 	public void attarate() {
-		fg.attaprice();
+		fg.attaPrice();
 		
 	}
 
@@ -65,7 +60,7 @@ public class Products {
 	}
 
 	public void potatorate() {
-		vp.potatoprice();
+		vp.potatoPrice();
 	}
 
 }

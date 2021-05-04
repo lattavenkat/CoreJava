@@ -2,88 +2,95 @@ package com.example.javausecase.corejava.generatereport;
 
 import java.util.Scanner;
 
-
 public class Emart {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String username = "";
-		int password;
-
-		System.out.println("\t\t\t\t\t Product Super Market");
-		System.out.println("\t\t\t\t\t  Chennai TamilNadu");
+		 
+	
+		System.out.println("-----------------------------------------------------------------------------------------------------------------");		
+		System.out.println("\t\t\t\t\t  JK TRADERS");
+		System.out.println("\t\t\t\t  Best Price With Best Quality");
 		System.out.println("-----------------------------------------------------------------------------------------------------------------");
-		System.out.println("Username");
-		username = sc.next();
-		System.out.println("Password");
-		password=sc.nextInt();
-		System.out.println("\t\t\t\t\tChoose your Catogory:");
-		int i, J = 0, k = 0, h = 0;
-		System.out.println("\t\t\t\t\t    1.Drinks \n \t\t\t\t\t    2.Vegetables \n \t\t\t\t\t    3.Foodgrains");
+		System.out.println("Enter Your Name");
+		String username =sc.next();
+		
+		System.out.println("\t\t\t\t\t      WELCOME " +username);
+		System.out.println("\t\t\t\t\t Here is the List of Catogory Available:");
+		int catogoryChoice;
+		int productChoice1 = 0;
+		int productChoice2 = 0;
+		int productChoice3 = 0;
+		System.out.println("\t\t\t\t\t    1. Drinks \n \t\t\t\t\t    2. Vegetables \n \t\t\t\t\t    3. Foodgrains");
 		System.out.println("-----------------------------------------------------------------------------------------------------------------");
 
 		System.out.println("\t\t\t\t\t  Enter your option");
-		i = sc.nextInt();
-		System.out.println("==================================================================================================================");
+		catogoryChoice = sc.nextInt();
 		Catogories types = new Catogories();
-		if (i == 1) {
-			types.Beverages();
-			System.out.println("\t\t\t\t\tChoose your Product:");
-			J = sc.nextInt();
-			Products Aproduct = new Products();
-			if (J == 1) {
-				Aproduct.Beveragecocoorder();
+		Products p1 = new Products();
+		if (catogoryChoice == 1) {
+			types.beverages();
+			System.out.println("\t\t\t\t\t Choose your Product:");
+			productChoice1 = sc.nextInt();
+			
+			if (productChoice1 == 1) {
+				p1.beveragecocoorder();
 			}
-			if (J == 2) {
-				Aproduct.Beveragepepsiorder();
-			}
-		}
-		if (i == 2) {
-			types.Vegetables();
-			System.out.println("\t\t\t\t\tChoose your Product:");
-			k = sc.nextInt();
-			Products Aproduct = new Products();
-			if (k == 1) {
-				Aproduct.VegetablesExoticProducts();
-			}
-			if (k == 2) {
-				Aproduct.VegetablesOrganicProducts();
+			if (productChoice1 == 2) {
+				p1.beveragepepsiorder();
 			}
 		}
-		if (i == 3) {
-			types.Foodgrains();
+		if (catogoryChoice == 2) {
+			types.vegetables();
 			System.out.println("\t\t\t\t\tChoose your Product:");
-			h = sc.nextInt();
-			Products Aproduct = new Products();
-			if (h == 1) {
-				Aproduct.FoodGrainFlourProducts();
+			productChoice2 = sc.nextInt();
+			
+			if (productChoice2 == 1) {
+				p1.vegetablesExoticProducts();
 			}
-			if (h == 2) {
-				Aproduct.FoodGrainsRiceProducts();
+			if (productChoice2 == 2) {
+				p1.vegetablesOrganicProducts();
 			}
 		}
-		System.out.println("\n------------------------------------------\n");
-		System.out.println("Willing to Place the order (Yes/No):");
+		if (catogoryChoice == 3) {
+			types.foodgrains();
+			System.out.println("\t\t\t\t\tChoose your Product:");
+			productChoice3 = sc.nextInt();
+			
+			if (productChoice3 == 1) {
+				p1.foodGrainFlourProducts();
+			}
+			if (productChoice3 == 2) {
+				p1.foodGrainRiceProducts();
+			}
+		}
+		else{
+			System.out.println("You have entered undefined option");
+		}
 
-		String a = sc.next();
-		if (i == 1 && J == 1) {
+		if (catogoryChoice == 1 && productChoice1 == 1) {
 			FinalPayment pay = new FinalPayment();
 			pay.cocolapay();
-		} else if (i == 1 && J == 2) {
+		} 
+		else if (catogoryChoice == 1 && productChoice1== 2) {
 			FinalPayment pay = new FinalPayment();
 			pay.pepsipay();
-		} else if (i == 2 && k == 1) {
+		} 
+		else if (catogoryChoice == 2 && productChoice2 == 1) {
 			FinalPayment pay = new FinalPayment();
 			pay.tomatopay();
 
-		} else if (i == 2 && k == 2) {
+		} 
+		else if (catogoryChoice == 2 && productChoice2 == 2) {
 			FinalPayment pay = new FinalPayment();
 			pay.potatopay();
-		} else if (i == 3 && h == 1) {
+		} 
+		else if (catogoryChoice == 3 && productChoice3 == 1) {
 			FinalPayment pay = new FinalPayment();
 			pay.ricepay();
 
-		} else if (i == 3 && h == 2) {
+		} 
+		else if (catogoryChoice == 3 && productChoice3 == 2) {
 			FinalPayment pay = new FinalPayment();
 			pay.attapay();
 		}
