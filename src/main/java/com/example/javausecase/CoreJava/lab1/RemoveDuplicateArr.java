@@ -1,18 +1,19 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Arrays;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class RemoveDuplicateArr {
+	static Logger log = Logger.getLogger(RemoveDuplicateArr.class.getName());
 	public static void main(String[] args) {
 		  int counter = 0;
-		  System.out.println("REMOVING DUPLICATES IN A ARRAY");
-		  System.out.println("------------------------------");
+		  log.info("REMOVING DUPLICATES IN A ARRAY");
+		  log.info("------------------------------");
 		 
 		  Scanner sc = new Scanner(System.in);
-	      System.out.println("Enter the size of the array: ");
+	      log.info("Enter the size of the array: ");
 	      int size = sc.nextInt();
 	      int[] arr = new int[size];
-	      System.out.println("Enter the elements of the array: ");
+	      log.info("Enter the elements of the array: ");
 	      for(int i=0; i<size; i++) {
 	         arr[i] = sc.nextInt();
 	      }
@@ -26,9 +27,9 @@ public class RemoveDuplicateArr {
 	            }
 	        }
 	        uniqueArr[counter] = arr[arr.length - 1];
-	        System.out.println("Array with Unique Elements : ");
+	        log.info("Array with Unique Elements : ");
 	        for (int i = 0; i <= counter; i++) {
-	            System.out.println(uniqueArr[i]);
+	            log.info(" " +uniqueArr[i]);
 	        }
 			sc.close();
 	    }

@@ -1,65 +1,63 @@
 package com.example.javausecase.corejava.generatereport;
 
-
+import java.util.logging.Logger;
 
 public class FinalPayment {
+	static Logger log = Logger.getLogger(FinalPayment.class.getName());
+	
 	Products p = new Products();
 	Products prod = new Products();
 	public void cocolapay() {
-		System.out.println(" ");
-		System.out.println("Order Summary");
-	     System.out.println("=============");	    
+		log.info(" ");
+		log.info("Order Summary");
+	     log.info("=============");	    
 	     p.cocorate();
-	     System.out.println("Only Cash On Delivary Available");
-	     System.out.println("Your Order Will be Delivered within a day");
-	     System.out.println("No ReFund will be Allowed ");
-		 System.out.println("HAPPY SHOPPING");
-	}
-	
+	     log.info("Only Cash On Delivary Available");
+	     log.info("Your Order Will be Delivered within a day");
+	     log.info("No ReFund will be Allowed ");
+		 log.info("HAPPY SHOPPING");
+	}	
 	public void pepsipay() {
-		System.out.println(" ");
-		System.out.println("Order Summary");
-	     System.out.println("=============");	    
+		log.info(" ");
+		log.info("Order Summary");
+	     log.info("=============");	    
 	     p.pepsirate();
-	     System.out.println("Only Cash On Delivary Available");
-	     System.out.println("Your Order Will be Delivered within a day");
-	     System.out.println("No ReFund will be Allowed ");
-		 System.out.println("HAPPY SHOPPING");
-	}
-	
+	     log.info("Only Cash On Delivary Available");
+	     log.info("Your Order Will be Delivered within a day");
+	     log.info("No ReFund will be Allowed ");
+		 log.info("HAPPY SHOPPING");
+	}	
 	public void tomatopay() {
-		System.out.println(" ");
-		System.out.println("Order Summary");
-	    System.out.println("=============");	   
+		log.info(" ");
+		log.info("Order Summary");
+	    log.info("=============");	   
 	    prod.tomatorate();	    
-	    System.out.println("Your OrderWill be Delivered within a day");   
-	    System.out.println("No ReFund will be Allowed ");
-		System.out.println("HAPPY SHOPPING");
+	    log.info("Your OrderWill be Delivered within a day");   
+	    log.info("No ReFund will be Allowed ");
+		log.info("HAPPY SHOPPING");
 	}
-	
 	public void potatopay() {
-		System.out.println(" ");
-		System.out.println("Order Summary");
-	    System.out.println("=============");	   
+		log.info(" ");
+		log.info("Order Summary");
+	    log.info("=============");	   
 	    prod.potatorate();
-	    System.out.println("Your Order Will be Delivered within a day");
-	    System.out.println("No ReFund will be Allowed ");
-		System.out.println("HAPPY SHOPPING");
+	    log.info("Your Order Will be Delivered within a day");
+	    log.info("No ReFund will be Allowed ");
+		log.info("HAPPY SHOPPING");
 	}
 	public void ricepay() {
-		System.out.println(" ");
-		System.out.println("Order Summary");
-	    System.out.println("=============");
+		log.info(" ");
+		log.info("Order Summary");
+	    log.info("=============");
 	    prod.ricerate();
-	    System.out.println("Your Order Will be Delivered within a day");
-	    System.out.println("No ReFund will be Allowed ");
-		System.out.println("HAPPY SHOPPING");
+	    log.info("Your Order Will be Delivered within a day");
+	    log.info("No ReFund will be Allowed ");
+		log.info("HAPPY SHOPPING");
 	}
-	
 	public void attapay() {
-		System.out.println(" ");
-		System.out.println("Order Summary");
-	    System.out.println("=============");
+		log.info(" ");
+		log.info("Order Summary");
+	    log.info("=============");
 	    prod.attarate();
-	    System.out.println("Your Order Will be Delivered Next day");
+	    log.info("Your Order Will be Delivered Next day");
 }}

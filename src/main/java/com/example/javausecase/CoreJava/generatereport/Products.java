@@ -1,48 +1,53 @@
 package com.example.javausecase.corejava.generatereport;
 
-
+import java.util.logging.Logger;
 
 public class Products {
-	static BeveragesProducts bp;
-	static VegetablesProducts vp;
+	static BeveragesProducts b;
+	static VegetablesProducts v;
 	static FoodgrainsProducts fg;
-
+	static Logger log = Logger.getLogger(Products.class.getName());
+	public static final int NUMB1 = 100;
+	public static final int NUMB2 = 1234;
+	public static final int NUMB3 = 4;
+	public static final int NUMB4 = 2;
+	public static final int NUMB5 = 200;
 	public void beveragecocoorder() {
-		bp = new BeveragesProducts(8, 700, 130, 12, 0, "COCOLA");
-		bp.showcocoladetails();
+		b = new BeveragesProducts(NUMB4, NUMB1, NUMB3, NUMB5, NUMB1, "COCOLA");
+		b.showcocoladetails();
 	}
 
 	public void beveragepepsiorder() {
-		bp = new BeveragesProducts(1236, 200, 145, 12, 0, "Beer");
-		bp.showPepsidetails();
+		b = new BeveragesProducts(NUMB1, NUMB3, NUMB1, NUMB5, NUMB4, "Beer");
+		b.showPepsidetails();
 	}
 
 	public void vegetablesOrganicProducts() {
-		vp = new VegetablesProducts(4506, 450, 150, 12, 0, "Organic");
-		vp.showtomatodetails();
+		v = new VegetablesProducts(NUMB2, NUMB3, NUMB5, NUMB4, NUMB1, "Organic");
+		v.showtomatodetails();
 	}
 
 	public void vegetablesExoticProducts() {
-		vp = new VegetablesProducts(1065, 550, 180, 12, 0, "Exotic");
-		vp.showpotatodetails();
+		v = new VegetablesProducts(NUMB3, NUMB5, NUMB1, NUMB4, NUMB5, "Exotic");
+		v.showpotatodetails();
 	}
 
 	public void foodGrainRiceProducts() {
-		fg = new FoodgrainsProducts(1302, 900, 250, 12, 0, "BASMATI");
+		fg = new FoodgrainsProducts(NUMB5, NUMB5, NUMB2, NUMB4, NUMB3, "BASMATI");
 		fg.showattadetails();
 	}
 
 	public void foodGrainFlourProducts() {
-		fg = new FoodgrainsProducts(1201, 800, 350, 12, 0, "CHAAKI ATTA");
+		fg = new FoodgrainsProducts(NUMB3, NUMB4, NUMB5, NUMB2, NUMB5, "CHAAKI ATTA");
 		fg.showricedetails();
 	}
 
 	public void cocorate() {
-		bp.cocoprice();
+		b.cocoprice();
 	}
 
 	public void pepsirate() {
-		bp.pepsiPrice();
+		b.pepsiPrice();
 	}
 
 	public void ricerate() {
@@ -56,11 +61,11 @@ public class Products {
 	}
 
 	public void tomatorate() {
-		vp.tomatoprice();
+		v.tomatoprice();
 	}
 
 	public void potatorate() {
-		vp.potatoPrice();
+		v.potatoPrice();
 	}
 
 }

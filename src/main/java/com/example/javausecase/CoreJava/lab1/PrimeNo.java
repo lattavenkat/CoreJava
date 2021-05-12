@@ -1,21 +1,23 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class PrimeNo {
+	static Logger log = Logger.getLogger(PrimeNo.class.getName());
+	public static final int NUMB1 = 2;
 	public void primemeth(int n)
 	{
 		boolean prime=false;
 		if(n<0) {
-			System.out.println("Negative Numbers not allowed");
+			log.info("Negative Numbers not allowed");
 		}
 		else if(n==0 || n==1) {
-			System.out.println(n + " is not a Prime Number");
+			log.fine(n + " is not a Prime Number");
 		}
 		else
 		{
-			for(int i=2;i<=n/2;i++) {
+			for(int i=NUMB1;i<=n/NUMB1;i++) {
 				if(n%i==0) {
-					System.out.println(n + " is not a Prime Number");
+					log.info(n+ " is not a Prime Number");
 					prime=true;
 					break;
 					
@@ -23,14 +25,14 @@ public class PrimeNo {
 			}
 			if(prime == false)
 			{
-				System.out.println(n+ " is a prime number");
+				log.info(n+ " is a prime number");
 			}
 		}
 	}
 	public static void main(String[] args) {
-		System.out.println("CHECK WHETHER A NUMBER IS A PRIME OR NOT");
-	     System.out.println("----------------------------------------");
-		System.out.println("Enter number : ");
+		log.info("CHECK WHETHER A NUMBER IS A PRIME OR NOT");
+	     log.info("----------------------------------------");
+		log.info("Enter number : ");
 		Scanner sc=new Scanner(System.in);		
 		int n=sc.nextInt();
 		PrimeNo pm=new PrimeNo();

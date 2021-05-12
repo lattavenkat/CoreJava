@@ -1,22 +1,27 @@
 package com.example.javausecase.corejava.lab2;
+	
+import java.util.logging.Logger;
+
 public class DatatypeRange {
+
+static Logger log = Logger.getLogger(DatatypeRange.class.getName());
 	public static void main(String[] args) {
-	      System.out.println("Max Values");
-	        System.out.println("Integer Max: " + Integer.MAX_VALUE);
-	        System.out.println("Float Max: " + Float.MAX_VALUE );
-	        System.out.println("Double Max: " + Double.MAX_VALUE );
-	        System.out.println("Byte Max: " + Byte.MAX_VALUE );
-	        System.out.println("Short Max: " + Short.MAX_VALUE );
-	        System.out.println("Long Max: " + Long.MAX_VALUE );
+	      log.info("Max Values");
+	        log.info("Integer Max: " + Integer.MAX_VALUE);
+	        log.info("Float Max: " + Float.MAX_VALUE );
+	        log.info("Double Max: " + Double.MAX_VALUE );
+	        log.info("Byte Max: " + Byte.MAX_VALUE );
+	        log.info("Short Max: " + Short.MAX_VALUE );
+	        log.info("Long Max: " + Long.MAX_VALUE );
 	        
 	        
-	        System.out.println("============================================");
-	        System.out.println("Min Values");
-	        System.out.println("Integer Min: " + Integer.MIN_VALUE);
-	        System.out.println("Float Min: " + Float.MIN_VALUE);
-	        System.out.println("Double Min: " + Double.MIN_VALUE);
-	        System.out.println("Byte Min " + Byte.MIN_VALUE);
-	        System.out.println("Short Min: " + Short.MIN_VALUE);
-	        System.out.println("Long Min " + Long.MIN_VALUE);
+	        log.info("============================================");
+	        log.info("Min Values");
+	        log.info("Integer Min: " + Integer.MIN_VALUE);
+	        log.info("Float Min: " + Float.MIN_VALUE);
+	        log.info("Double Min: " + Double.MIN_VALUE);
+	        log.info("Byte Min " + Byte.MIN_VALUE);
+	        log.info("Short Min: " + Short.MIN_VALUE);
+	        log.info("Long Min " + Long.MIN_VALUE);
 	    }
 }

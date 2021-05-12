@@ -1,21 +1,29 @@
-package com.fruitshop;
+package com.example.javausecase.corejava.fruitshop;
+
+import java.util.logging.Logger;
 
 public class FruitsDetails {
     String fruitName;
 	String fruitType;
 	String distributor;
-	double fruitWeight;
+	
 	String fruitCategory;
 	String location;
 	String expiryDate;
+	String[] list;
+	double fruitWeight;
 	int quantity;
 	double cost;
 	double totalcost;
+
+	public static final int NUMB = 100;
+	public static final Logger log = Logger.getLogger(FruitsDetails.class.getName());
 	
 
 public FruitsDetails (String fruitName, String fruitType, String distributor, double fruitWeight, String fruitCategory,
 		String location, String expiryDate, int quantity, double cost, double totalcost) {
 	super();
+				
 	this.fruitName = fruitName;
 	this.fruitType = fruitType;
 	this.distributor = distributor;
@@ -33,27 +41,27 @@ public double costDetails(String fruitName)
 switch(fruitName)
 {
 case "apple" : 
-			cost=100;
+			this.cost=NUMB;
 			totalcost= quantity*cost;
 			break;
 case "kiwi"  :  
-			cost=200;
+			cost=(double)NUMB+NUMB;
 			totalcost= quantity*cost;
 			break;
 case "orange":  
-			cost=300;
+			cost=(double) NUMB+NUMB+NUMB;
 			totalcost= quantity*cost;
 			break;
 case "muskmelon": 
-			cost=400;
+			cost=(double) NUMB+NUMB+NUMB+NUMB;
 			totalcost= quantity*cost;
 			break;
 case "grapes": 
-			cost=500;
+			cost=(double) NUMB+NUMB+NUMB+NUMB+NUMB;
 			totalcost= quantity*cost;
 			break;
 default:
-		System.out.println("Specified fruit not available");
+		log.info("Specified fruit not available");
 }
 		return totalcost;
 }

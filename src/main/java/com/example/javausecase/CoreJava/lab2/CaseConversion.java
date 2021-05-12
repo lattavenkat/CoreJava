@@ -1,11 +1,14 @@
 package com.example.javausecase.corejava.lab2;
 import java.util.Scanner;
 
+import java.util.logging.Logger;
 public class CaseConversion {
+    
+static Logger log = Logger.getLogger(CaseConversion.class.getName());
 public void casecon() {
 	String str1;
     Scanner sc = new Scanner(System.in);
-	System.out.println("Enter the string");
+	log.info("Enter the string");
 	str1 = sc.nextLine();			
     StringBuffer newStr=new StringBuffer(str1);               
     for(int i = 0; i < str1.length(); i++) {    
@@ -17,12 +20,12 @@ public void casecon() {
             newStr.setCharAt(i, Character.toLowerCase(str1.charAt(i)));    
         }    
     }    
-    System.out.println("String after case conversion : " + newStr);    
+    log.info("String after case conversion : " + newStr);    
     sc.close();
 }
 public static void main(String[] args) {    
-	System.out.println("CONVERSION OF UPPERCASE TO LOWERCASE AND VICE-VERSA");
-	System.out.println("-------------------");
+	log.info("CONVERSION OF UPPERCASE TO LOWERCASE AND VICE-VERSA");
+	log.info("-------------------");
 	CaseConversion ob = new CaseConversion();
 	ob.casecon();
 }    	

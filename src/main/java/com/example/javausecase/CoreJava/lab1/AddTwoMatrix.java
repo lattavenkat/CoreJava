@@ -1,50 +1,54 @@
 package com.example.javausecase.corejava.lab1;
 
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class AddTwoMatrix {
-	public static void main(String args[])
+	
+static Logger log = Logger.getLogger(AddTwoMatrix.class.getName());
+			public static void main(String args[])
 	  {
+				
 		int row;
 		int col;
 		int i;
 		int j;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ADDITION OF TWO MATRIX\n");
-		System.out.println("----------------------");
-		System.out.println("Enter the number of rows: ");
+		log.info("ADDITION OF TWO MATRIX\n");
+		log.info("----------------------");
+		log.info("Enter the number of rows: ");
 		row = sc.nextInt();
 		 
-		System.out.println("Enter the number columns: ");
+		log.info("Enter the number columns: ");
 		col = sc.nextInt();
 		 
 		int mat1[][] = new int[row][col];
 		int mat2[][] = new int[row][col];
 		int res[][] = new int[row][col];
 		 
-		System.out.println("Enter the elements of matrix1");		 
+		log.info("Enter the elements of matrix1");		 
 		for ( i= 0 ; i < row ; i++){		 		 
 			for ( j= 0 ; j < col ;j++){
 		
 				mat1[i][j] = sc.nextInt();
-				System.out.println();
+				log.info(" ");
 			}
 		}		
-		System.out.println("Enter the elements of matrix2");		 
+		log.info("Enter the elements of matrix2");		 
 		for ( i= 0 ; i < row ; i++){		 
 			for ( j= 0 ; j < col ;j++){
 		
 				mat2[i][j] = sc.nextInt();
-				System.out.println();
+				log.info(" ");
 			}
 		}
-		 System.out.print("Matrix Sum : \n");
+		log.info("Matrix Sum : \n");
 		for ( i= 0 ; i < row ; i++ ){
 			for ( j= 0 ; j < col ;j++) {
 				res[i][j] = mat1[i][j] + mat2[i][j] ; 	
-				System.out.print(res[i][j]+"\t");				 				
+				log.fine(" " +res[i][j]+ "\t");				 				
 			}
-			System.out.println();
+			log.info(" ");
 		}
 		sc.close();
 	  }

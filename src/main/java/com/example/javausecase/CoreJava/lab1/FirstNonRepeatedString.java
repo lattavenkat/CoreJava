@@ -1,7 +1,8 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class FirstNonRepeatedString {
+	static Logger log = Logger.getLogger(FirstNonRepeatedString.class.getName());
 	public void nonrepeatstr(String str ) {
 		for (int i = 0; i < str.length(); i++) {
 			  boolean found = true;
@@ -12,7 +13,7 @@ public class FirstNonRepeatedString {
 				  }
 			  }
 		  if (found) {
-			   System.out.println("The first non repeated character in "  +str+ " is: " + str.charAt(i));
+			   log.info("The first non repeated character in "  +str+ " is: " + str.charAt(i));
 			   break;
 		   }
 		  }
@@ -20,10 +21,10 @@ public class FirstNonRepeatedString {
 	public static void main(String[] args) {
 		  
 		  Scanner sc = new Scanner(System.in);
-		  System.out.println("FINDING FIRST NON-REPEATED CHARACTER OF A STRING");
-	      System.out.println("-------------------------------------------------");
+		  log.info("FINDING FIRST NON-REPEATED CHARACTER OF A STRING");
+	      log.info("-------------------------------------------------");
 			
-	      System.out.println("Enter the String :");
+	      log.info("Enter the String :");
 	      String str = sc.nextLine();
 	      FirstNonRepeatedString ob = new FirstNonRepeatedString();
 	      ob.nonrepeatstr(str);	

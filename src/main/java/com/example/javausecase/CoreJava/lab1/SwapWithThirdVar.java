@@ -1,19 +1,20 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class SwapWithThirdVar {
+	static Logger log = Logger.getLogger(SwapWithThirdVar.class.getName());
 	public static void main(String[] args) {
-		System.out.println("SWAPPING WITH THIRD VARIABLE");
-		System.out.println("-------------------------------");
+		log.info("SWAPPING WITH THIRD VARIABLE");
+		log.info("-------------------------------");
 		int x;
 		int y;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the Values of x and y");
+		log.info("Enter the Values of x and y");
 		x = sc.nextInt();
 		y = sc.nextInt();
-		System.out.println("Before Swapping");
-		System.out.println("Value of x is :" + x);
-		System.out.println("Value of y is :" + y);
+		log.info("Before Swapping");
+		log.info("Value of x is :" + x);
+		log.info("Value of y is :" + y);
 
 		swap(x, y);
 		sc.close();
@@ -23,8 +24,8 @@ public class SwapWithThirdVar {
 		int z = x;
 		x = y;
 		y = z;
-		System.out.println("After Swapping");
-		System.out.println("Value of x is :" + x);
-		System.out.println("Value of y is :" + y);
+		log.info("After Swapping");
+		log.info("Value of x is :" + x);
+		log.info("Value of y is :" + y);
 	}
 }

@@ -1,18 +1,19 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class StrRevWithoutInbuilt {
+	static Logger log = Logger.getLogger(StrRevWithoutInbuilt.class.getName());
 	public void strrev() {
-		System.out.println("STRING REVERSAL WITHOUT IN-BUILT FUNCTION");
-		System.out.println("---------------------------------------");
+		log.info("STRING REVERSAL WITHOUT IN-BUILT FUNCTION");
+		log.info("---------------------------------------");
 Scanner sc=new Scanner(System.in);         
-System.out.print("Enter a String: ");  
+log.info("Enter a String: ");  
 String str=sc.nextLine();  
-System.out.print("Reversed string is: ");  
+log.info("Reversed string is: ");  
 int i=str.length();                   
 while(i>0)  
 {  
-System.out.print(str.charAt(i-1));                 
+log.info(" " +str.charAt(i-1));                 
 i--;                                
 }  
 sc.close();

@@ -1,25 +1,27 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Arrays;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class SecondLarNo {
+	public static final int NUMB1 = 2;
+	static Logger log = Logger.getLogger(SecondLarNo.class.getName());
 		public void seclarge(int[] arr,int n) {
 			Arrays.sort(arr);
-			System.out.println("Sorted Array: ");
+			log.info("Sorted Array: ");
 			for(int i=0;i<arr.length;i++)
 			{
-				System.out.println(arr[i]);
+				log.info(" " +arr[i]);
 			}
-			System.out.println("Second Largest Number: " +arr[n-2]);
+			log.info("Second Largest Number: " +arr[n-NUMB1]);
 		}
 
 		public static void main(String[] args) {
-			System.out.println("FINDING THE SECOND LARGEST NUMBER");
+			log.info("FINDING THE SECOND LARGEST NUMBER");
 			Scanner sc=new Scanner(System.in);
-			System.out.println("Enter n value : ");
+			log.info("Enter n value : ");
 			int n=sc.nextInt();
 			int[] arr=new int[n];
-			System.out.println("Array Values: ");
+			log.info("Array Values: ");
 			for(int i=0;i<n;i++) {
 				arr[i]=sc.nextInt();
 			}

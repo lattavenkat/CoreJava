@@ -1,26 +1,31 @@
 package com.example.javausecase.corejava.lab2;
 import java.util.Scanner;
 
+import java.util.logging.Logger;
 public class ConvertMathno {
+    public static final int NUMB1 = 10;
+static Logger log = Logger.getLogger(ConvertMathno.class.getName());
 	public void mathno(int n) {
 		
-        int n1=n,n2=n;
-        int b=n1%10,a=n2/10; 
-        String[] single_digits = new String[]{"zero","one","two","three","four","five", "six","seven","eight","nine"};
-        String[] two_digits = new String[]{"","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen", "nineteen"};
-        String[] tens_multiple = new String[]{"","","twenty","thirty","forty","fifty","sixty", "seventy","eighty","ninety"};
+        int n1=n;
+        int n2=n;
+        int b=n1%NUMB1;
+        int a=n2/NUMB1; 
+        String[] singleDigits = new String[]{"zero","one","two","three","four","five", "six","seven","eight","nine"};
+        String[] twoDigits = new String[]{"","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen", "nineteen"};
+        String[] tenMultiple = new String[]{"","","twenty","thirty","forty","fifty","sixty", "seventy","eighty","ninety"};
         if(a==1)
         {
-            System.out.println(two_digits[b+1]);
+            log.info(twoDigits[b+1]);
         }
         else if(b==0)
-            System.out.println(tens_multiple[a]);
+            log.info(tenMultiple[a]);
         else
-            System.out.print(tens_multiple[a]+" "+single_digits[b]);
+            log.info(tenMultiple[a]+" "+singleDigits[b]);
 	}
 	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the number");
+        log.info("Enter the number");
         int n=sc.nextInt();
 		ConvertMathno ob = new ConvertMathno();
 		ob.mathno(n);

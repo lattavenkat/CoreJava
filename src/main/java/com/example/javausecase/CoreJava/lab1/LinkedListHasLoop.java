@@ -1,5 +1,11 @@
 package com.example.javausecase.corejava.lab1;
+import java.util.logging.Logger;
 public class LinkedListHasLoop {
+	static Logger log = Logger.getLogger(LinkedListHasLoop.class.getName());
+	public static final int NUMB1 = 20;
+	public static final int NUMB2 = 4;
+	public static final int NUMB3 = 23;
+	public static final int NUMB4 = 7;
 	static class Node
 	    {
 	       int data;
@@ -28,18 +34,18 @@ public class LinkedListHasLoop {
 	    }	    
 	    public static void main(String[] args)
 	    {
-	    	System.out.println("CHECKING IF A LINKEED LIST HAS LOOP");
-		      System.out.println("------------------");
+	    	log.info("CHECKING IF A LINKEED LIST HAS LOOP");
+		      log.info("------------------");
 	        Node head = null;
-	        head = add(head, 20);
-	        head = add(head, 4);
-	        head = add(head, 15);
-	        head = add(head, 10);
+	        head = add(head, NUMB1);
+	        head = add(head, NUMB2);
+	        head = add(head, NUMB3);
+	        head = add(head, NUMB4);
 	        head.next.next.next.next = head;
 	        if (detect(head))
-	           System.out.print("Loop found");
+	           log.info("Loop found");
 	        else
-	           System.out.print("No Loop found");
+	           log.info("No Loop found");
 	    }
 
 }

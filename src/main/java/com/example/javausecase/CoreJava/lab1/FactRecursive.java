@@ -1,7 +1,8 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class FactRecursive {
+	static Logger log = Logger.getLogger(FactRecursive.class.getName());
 	public static long factorial(int num) {
 	      if(num >= 1) {
 	    	  return num * factorial(num - 1);
@@ -12,12 +13,12 @@ public class FactRecursive {
 	      }	     
 	   }
 	   public static void main(String args[]) {
-		  System.out.println("FACTORIAL OF NUMBER USING RECURSIVE WAY");
-		  System.out.println("---------------------------------------");
+		  log.info("FACTORIAL OF NUMBER USING RECURSIVE WAY");
+		  log.info("---------------------------------------");
 	      Scanner sc = new Scanner(System.in);
-	      System.out.println("Enter the number");
+	      log.info("Enter the number");
 	      int num = sc.nextInt();
-	      System.out.println("Factorial of" +num+ "is "+ factorial(num));
+	      log.info("Factorial of" +num+ " is "+ factorial(num));
 		  sc.close();
 		}
 	   }

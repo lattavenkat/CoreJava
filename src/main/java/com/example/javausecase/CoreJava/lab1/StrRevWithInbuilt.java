@@ -1,25 +1,26 @@
 package com.example.javausecase.corejava.lab1;
 import java.util.Scanner;
-
+import java.util.logging.Logger;
 public class StrRevWithInbuilt {
+	static Logger log = Logger.getLogger(StrRevWithInbuilt.class.getName());
 	public void strrev() {
 		String str;
 		String rev ="";
-		System.out.println("Enter the String");
+		log.info("Enter the String");
 		Scanner sc = new  Scanner(System.in);
 		str= sc.nextLine();
-		System.out.println("Original String: " +str);
+		log.info("Original String: " +str);
 		int len= str.length();
 		for( int i= len-1;i>=0;i--) {
 			rev= rev + str.charAt(i);	
 		}
-		System.out.println("Reversed String is: " +rev);
+		log.info("Reversed String is: " +rev);
 		sc.close();
 	}
 	public static void main(String args[])  
 	{  
-		System.out.println("STRING REVERSAL WITH IN-BUILT FUNCTION");
-		System.out.println("---------------------------------------");
+		log.info("STRING REVERSAL WITH IN-BUILT FUNCTION");
+		log.info("---------------------------------------");
 		StrRevWithInbuilt ob = new StrRevWithInbuilt();
 		ob.strrev();
 	}}
